@@ -90,10 +90,11 @@ PRODUCT_COPY_FILES += \
 # ANT+
 PRODUCT_PACKAGES += \
     AntHalService
-
-# AOSiP Device Settings
+    
+# Tri-state keys
 PRODUCT_PACKAGES += \
-    DeviceSettings
+	KeyHandler \
+	tri-state-key_daemon
 
 # Atrace
 PRODUCT_PACKAGES += \
@@ -451,10 +452,6 @@ PRODUCT_PACKAGES += \
     android.hardware.thermal@1.0-impl \
     android.hardware.thermal@1.0-service \
     thermal.msmnile
-
-# Touch
-PRODUCT_PACKAGES += \
-    vendor.lineage.touch@1.0-service.oneplus_msmnile
 
 # tri-state key
 PRODUCT_PACKAGES += \
